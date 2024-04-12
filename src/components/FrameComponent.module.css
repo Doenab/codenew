@@ -1,0 +1,54 @@
+.novaa {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 72px;
+}
+.novaaWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-37xl);
+}
+.buttonsIcon,
+.buttonsIcon1,
+.buttonsIcon2,
+.buttonsIcon3 {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  border-radius: var(--br-9xs);
+  object-fit: cover;
+  min-height: 40px;
+}
+.buttonsIcon:hover,
+.buttonsIcon1:hover,
+.buttonsIcon2:hover,
+.buttonsIcon3:hover{
+  background-color: #DDCB8C; 
+}
+
+.buttonsIconParent,
+.frameParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.buttonsIconParent {
+  flex-direction: row;
+  gap: var(--gap-5xs);
+}
+.frameParent {
+  flex-direction: column;
+  text-align: left;
+  font-size: var(--subheading-size);
+  color: var(--color-black);
+  font-family: var(--subheading);
+}
+@media screen and (max-width: 450px) {
+  .novaa {
+    font-size: var(--font-size-lgi);
+    line-height: 29px;
+  }
+}

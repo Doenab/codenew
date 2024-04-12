@@ -1,0 +1,114 @@
+.novaa {
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 73px;
+  white-space: nowrap;
+}
+.novaaLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-4xs);
+}
+.male {
+  position: relative;
+  line-height: 150%; 
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  display: inline-block;
+  min-width: 47px;
+}
+.maleWrapper:hover, .femaleWrapper:hover, .trendsWrapper:hover{
+  color:#279560; 
+  cursor:pointer;
+}
+
+.maleWrapper {
+  width: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-smi) var(--padding-xl) 0 0;
+  box-sizing: border-box;
+}
+.female {
+  position: relative;
+  line-height: 150%;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  display: inline-block;
+  min-width: 69px;
+}
+.femaleWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-smi) 0 0;
+}
+.trends {
+  position: relative;
+  line-height: 150%;
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  display: inline-block;
+  min-width: 67px;
+}
+.frameParent,
+.trendsWrapper {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.trendsWrapper {
+  background-color: var(--color-white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-smi) var(--padding-13xl) var(--padding-sm);
+  z-index: 1;
+}
+.frameParent {
+  gap: var(--gap-36xl);
+  font-size: var(--body-text-size);
+}
+.fRAMEA,
+.fRAMEAWrapper,
+.frameParent {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.fRAMEA {
+  flex: 1;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--subheading-size);
+  color: var(--color-black);
+  font-family: var(--subheading);
+}
+.fRAMEAWrapper {
+  width: 1805px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-6xs);
+  box-sizing: border-box;
+}
+@media screen and (max-width: 700px) {
+  .frameParent {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .frameParent {
+    gap: var(--gap-8xl);
+  }
+}
